@@ -14,9 +14,13 @@ class CreateKelas extends Migration
     public function up()
     {
         Schema::create('kelas', function (Blueprint $table) {
+
             $table->id();
-            $table->string('nama_kelas',20);
-            $table->string('jurusan',100);
+            //nomor_induk_siswa . . create field NIS as integer data type
+            $table->string('nama_kelas');
+            //nama...create nama as varchar data type with length character 100
+            $table->string('jurusan');
+            //kkkkkk
             $table->timestamps();
         });
     }
